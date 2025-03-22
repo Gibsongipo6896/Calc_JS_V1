@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Clac V1</title>
+    <link rel="shortcut icon" href="calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="ClacJS.css">
+    
+    
+</head>
+<body>
+    <h1>JS Calc</h1><br>
+    <div id="parent">
+        <div id="calculator">
+            <input id="display" readonly >
+            <div id="keys">
+                <button onclick="ongezaChar('+')" class="vip">+</button>
+                <button onclick="ongezaChar('7')">7</button>
+                <button onclick="ongezaChar('8')">8</button>
+                <button onclick="ongezaChar('9')">9</button>
+                <button onclick="ongezaChar('-')" class="vip">-</button>
+                <button onclick="ongezaChar('4')">4</button>
+                <button onclick="ongezaChar('5')">5</button>
+                <button onclick="ongezaChar('6')">6</button>
+                <button onclick="ongezaChar('*')" class="vip">X</button>
+                <button onclick="ongezaChar('1')">1</button>
+                <button onclick="ongezaChar('2')">2</button>
+                <button onclick="ongezaChar('3')">3</button>
+                <button onclick="ongezaChar('/')" class="vip">/</button>
+                <button onclick="ongezaChar('0')">0</button>
+                <button onclick="ongezaChar('.')">.</button>
+                <button onclick="calculate()" id="equals" >=</button>
+                <button onclick="rubbChars()"class="vip">C</button>
+                <button onclick="rubbOne()" class="vip" >Bks</button>
+    
+            </div>
+    
+        </div>
+    </div>
+    <div id="futa">
+        &copy; 2025 Gibson O.W
+    </div>
+
+    <script src="CalcJS.js"></script>
+</body>
+</html>

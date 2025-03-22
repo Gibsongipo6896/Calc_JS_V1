@@ -1,0 +1,105 @@
+body{
+    background-color: rgba(0, 0, 0, 0.856);
+    
+}
+#calculator{
+    width: 400px;
+    background-color: black;
+    height: 490px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 50px 5px 400px rgba(123, 255, 0, 0.226);
+    position: relative;
+    margin: 20px;
+
+
+}
+
+#calculator::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(120deg,green,yellow);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+#display{
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(3, 73, 3);
+    color: white;
+    border: solid 2px rgb(129, 255, 91);
+
+   
+}
+
+#parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 10px;
+}
+
+
+
+button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 15px;
+    font-size: 25px;
+    background-color: rgba(84, 211, 84, 0.411);
+    color: white;
+}
+
+.vip{
+    background-color: yellow;
+}
+.vip:hover{
+    background-color: white;
+    color: green;
+}
+
+#equals{
+    background-color: green;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+#futa{
+    margin-top: 40px;
+    padding-top: 10px;
+    color: grey;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.856);
+    height: 30px;
+    z-index: 9999;
+}
